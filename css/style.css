@@ -39,13 +39,15 @@ a{
 }
 
 .container-informacion{
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .informacion {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   height: auto;
   margin-bottom: 60px;
@@ -53,15 +55,13 @@ a{
 }
 .informacion h1{
   display: inline-block;
-  width: 600px;
+  width: 530px;
   line-height: 1.2;
   font-size: 6.5rem;
-  margin-right: 50px;
 }
 .informacion h1:hover{
   text-decoration: underline;
 }
-
 .informacion p{
   display: inline-block;
   width: 800px;
@@ -69,6 +69,30 @@ a{
   font-size: 1.6rem;
   margin-right: 50px;
   margin-top: 30px;
+}
+.profile-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.profile-photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.logo{
+  margin: auto; 
+}
+.logo img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .principal{
