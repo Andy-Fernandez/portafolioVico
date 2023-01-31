@@ -22,3 +22,26 @@ html{
   margin-left: 40px;
   font-size: 1.6rem;
 }
+
+.informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 50px;
+  height: 50vh;
+}
+.informacion h1{
+  display: inline-block;
+  width: 600px;
+  line-height: 1.2;
+  font-size: 6.5rem;
+  margin-right: 50px;
+}
+.informacion p{
+  display: inline-block;
+  width: 900px;
+  line-height: 1.65;
+  font-size: 1.6rem;
+  margin-right: 50px;
+  margin-top: 30px;
+}
