@@ -38,12 +38,18 @@ a{
   color:#000;
 }
 
+.container-informacion{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .informacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 50px;
   height: 50vh;
+  width: 800px;
+  overflow: auto;
 }
 .informacion h1{
   display: inline-block;
@@ -58,7 +64,7 @@ a{
 
 .informacion p{
   display: inline-block;
-  width: 900px;
+  width: 800px;
   line-height: 1.65;
   font-size: 1.6rem;
   margin-right: 50px;
@@ -68,7 +74,8 @@ a{
 .principal{
   display: flex;
   flex-direction: column;
-  margin: 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .principal h2{
   font-size: 3.2rem;
