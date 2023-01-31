@@ -47,9 +47,9 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: auto;
+  margin-bottom: 60px;
   width: 800px;
-  overflow: auto;
 }
 .informacion h1{
   display: inline-block;
