@@ -10,5 +10,15 @@ html{
   background-color: black;
 }
 
-
-
+.barra-navegacion{
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+}
+.barra-navegacion div{
+  display: inline-block;
+  padding: 30px 0;
+  height: 80px;
+  margin-left: 40px;
+  font-size: 1.6rem;
+}
