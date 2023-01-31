@@ -14,13 +14,23 @@ html{
   display: flex;
   justify-content: right;
   margin-right: 50px;
+  padding: 20px 0;
 }
 .barra-navegacion div{
   display: inline-block;
-  padding: 30px 0;
-  height: 80px;
-  margin-left: 40px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 6px;
+  width: 100px;
+  height: 32px;
+  border-radius: 20px;
+  margin-left: 12px;
   font-size: 1.6rem;
+}
+.barra-navegacion div:hover{
+  background-color: #fff;
+  color: black;
+  transition: all 0.5s ease;
 }
 
 .informacion {
@@ -37,6 +47,10 @@ html{
   font-size: 6.5rem;
   margin-right: 50px;
 }
+.informacion h1:hover{
+  text-decoration: underline;
+}
+
 .informacion p{
   display: inline-block;
   width: 900px;
@@ -44,4 +58,69 @@ html{
   font-size: 1.6rem;
   margin-right: 50px;
   margin-top: 30px;
+}
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+.principal h2{
+  font-size: 3.2rem;
+  margin-bottom: 30px;
+}
+
+.tarjeta {
+  margin: 20px;
+}
+.tarjeta:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.tarjetas-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+.tarjetas-container .tarjeta{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 400px;
+  margin-bottom: 50px;
+  border: #fff 1px solid;
+  border-radius: 20px;
+}
+.tarjeta img{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.tarjeta .contenido{
+  padding: 20px;
+}
+.tarjeta .contenido h3{
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+.tarjeta .contenido p{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.container-tecnologia{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.tarjeta .contenido .tecnologia{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  margin-right: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
