@@ -6,3 +6,30 @@
 html{
   font-size: 62.5%;
 }
+.navbar {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+  padding: 20px 0;
+}
+
+.navbar-nav .nav-item {
+  text-align: center;
+  padding-top: 6px;
+  width: 100px;
+  height: 32px;
+  border-radius: 20px;
+  margin-left: 12px;
+  font-size: 1.6rem;
+}
+
+.navbar-nav .nav-item:hover a.nav-link {
+  background-color: #fff;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: #...;
+}
