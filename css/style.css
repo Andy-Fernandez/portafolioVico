@@ -85,6 +85,7 @@ a.nav-link {
   flex-direction: column;
   align-items: center;
   max-width: 992px;
+  margin: 0 auto;
 }
 .info{
   display: flex;
@@ -108,7 +109,10 @@ a.nav-link {
   height: 100%;
   border-radius: 50%;
 }
-.info span{
+.info p{
+  max-width: 500px;
+}
+.info .my-name{
   color: rgb(255, 245, 62);
 }
 .info .underline{
@@ -128,7 +132,6 @@ a.nav-link {
 .header-info .swipe span{
   display: inline-block;
   /* background-color: ;s */
-
 }
 /*
 .container-informacion{
