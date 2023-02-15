@@ -120,6 +120,7 @@ a.nav-link {
   text-decoration: underline;
 }
 
+
 .header-info .swipe{
   height: auto;
   width: 140px;
@@ -153,7 +154,7 @@ a.nav-link {
   padding: 32px;
   border-radius: 20px;
   gap: 20px;
-  /* min-height: 502px; */
+  max-width: 992px;
   height: auto;
   margin: 0 auto;
 }
@@ -174,7 +175,10 @@ a.nav-link {
 .about .about-job{
   color: rgb(51, 65, 85);
 }
+
 /*
+Este el código que que le da estilos a
+la priemra versión de código
 .container-informacion{
   display: flex;
   flex-wrap: wrap;
@@ -231,7 +235,21 @@ a.nav-link {
   height: 200px;
   object-fit: cover;
 }
+*/
 
+.main-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 992px;
+  margin: 0 auto;
+  height: calc(100vh);
+}
+.main-container h2{
+  font-size: 3.2rem;
+  margin: 30px 0;
+}
+/*
+Esta es la parte de los proyectos
 .principal{
   display: flex;
   flex-direction: column;
@@ -242,21 +260,32 @@ a.nav-link {
   font-size: 3.2rem;
   margin-bottom: 30px;
 }
+*/
 
-.tarjeta {
-  margin: 20px;
+
+.card-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
 }
-.tarjeta:hover{
-  transform: scale(1.1);
-  transition: all 0.5s ease;
-}
-.tarjetas-container{
+/* .tarjetas-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 50px;
+} */
+.card-section .card{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 400px;
+  margin-bottom: 50px;
+  border: #fff 1px solid;
+  border-radius: 20px;
+  margin: 12px;
 }
-.tarjetas-container .tarjeta{
+/* .tarjetas-container .tarjeta{
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -264,30 +293,73 @@ a.nav-link {
   margin-bottom: 50px;
   border: #fff 1px solid;
   border-radius: 20px;
+  margin: 20px;
+} */
+.card-section .card:hover{
+  transform: scale(1.03);
+  transition: all 0.5s ease;
 }
-.tarjeta img{
+/* .tarjeta:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+} */
+.card-section .card .card-image{
   width: 100%;
   height: 200px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.tarjeta .contenido{
+/* .tarjeta img{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+} */
+.card-section .card .card-content{
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
-.tarjeta .contenido h3{
+/* .tarjeta .contenido{
+  padding: 20px;
+} */
+.card-section .card .card-title{
   font-size: 2.4rem;
   margin-bottom: 10px;
 }
-.tarjeta .contenido p{
-  font-size: 1.2rem;
+/* .tarjeta .contenido h3{
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+} */
+.card-section .card .card-text{
+  font-size: 1.6rem;
   margin-bottom: 20px;
 }
-.container-tecnologia{
+/* .tarjeta .contenido p{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+} */
+.card-section .card .card-link{
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
 }
-.tarjeta .contenido .tecnologia{
+/* .container-tecnologia{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+} */
+.card-section .card-link .link{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 8px;
+  background-color: var(--color-claro);
+  color: black;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+/* .tarjeta .contenido .tecnologia{
   display: inline-block;
   padding: 10px 20px;
   margin: 8px;
@@ -296,7 +368,9 @@ a.nav-link {
   border-radius: 20px;
   font-size: 1.2rem;
   text-decoration: none;
-} */
+}*/
+
+
 
 /* TOGGLE */
 .nav-toggle {
