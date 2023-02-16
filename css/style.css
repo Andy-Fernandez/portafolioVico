@@ -48,6 +48,9 @@ a{
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-primario);
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -382,7 +385,6 @@ Esta es la parte de los proyectos
   height: calc(100vh);
   margin: 0 auto;
   padding: 0 20px;
-  background-color: #e0e0e0;
 }
 form{
   display: flex;
@@ -394,6 +396,7 @@ form{
   width: 300px;
   color: var(--color-oscuro);
   border-radius: 50px;
+  background: var(--color-claro);
 }
 form h2{
   margin: 0 auto 20px;
