@@ -247,7 +247,7 @@ la priemra versión de código
 }
 .main-container h2{
   font-size: 3.2rem;
-  margin: 30px 0;
+  margin: 30px 10px;
 }
 /*
 Esta es la parte de los proyectos
@@ -394,7 +394,6 @@ form{
   width: 300px;
   color: var(--color-oscuro);
   border-radius: 50px;
-  background: var(--color-claro);
 }
 form h2{
   margin: 0 auto 20px;
@@ -466,7 +465,6 @@ form h2{
   .navbar {
     flex-direction: column;
     align-items: center;
-    height: auto;
   }
   .navbar-brand{
     display: flex;
