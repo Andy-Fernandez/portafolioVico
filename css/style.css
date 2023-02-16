@@ -243,7 +243,7 @@ la priemra versión de código
   flex-direction: column;
   max-width: 992px;
   margin: 0 auto;
-  height: calc(100vh);
+  min-height: calc(100vh);
 }
 .main-container h2{
   font-size: 3.2rem;
@@ -372,6 +372,80 @@ Esta es la parte de los proyectos
 }*/
 
 
+/* Formulario de contacto */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100vw;
+  height: calc(100vh);
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #e0e0e0;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 40px 0;
+  width: 300px;
+  color: var(--color-oscuro);
+  border-radius: 50px;
+  background: var(--color-claro);
+}
+form h2{
+  margin: 0 auto 20px;
+}
+.form-input{
+  width: 80%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 20px;
+  border-radius: 50px;
+  background: var(--color-claro);
+  border: 1px solid var(--color-oscuro);
+  outline: none;
+  font-size: 1.3rem;
+  font-family: 'Niuno Sans', sans-serif;
+  text-shadow: 1px 1px 0 var(--color-claro);
+}
+.form-label{
+  font-size: var(--font);
+  margin-top: 8px;
+  margin-left: 30px;
+  align-self: flex-start;
+  text-shadow: 1px 1px 0 var(--color-claro);
+}
+#message{
+  border-radius: 25px;
+  height: 100px;
+  padding-top: 20px;
+}
+.form-submit{
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background: var(--color-oscuro);
+  color: var(--color-claro);
+  outline: none;
+  font-size: 1.3rem;
+  font-family: 'Niuno Sans', sans-serif;
+  cursor: pointer;
+}
+.form-submit:hover {
+  background: var(--color-claro);
+  color: var(--color-oscuro);
+}
+.form-submit:active {
+  background: var(--color-claro);
+  color: var(--color-oscuro);
+}
+
+
 
 /* TOGGLE */
 .nav-toggle {
@@ -384,6 +458,8 @@ Esta es la parte de los proyectos
   cursor: pointer;
   display: none;
 }
+
+
 
 /* Media query para que el navbar-var aparezca de costado en moviles: */
 @media (max-width: 768px) {
