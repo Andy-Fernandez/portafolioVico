@@ -146,24 +146,25 @@ a.nav-link {
 }
 .about{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
   background-color: var(--color-claro);
   color: var(--color-oscuro);
-  padding: 32px;
   border-radius: 20px;
-  gap: 20px;
   max-width: 992px;
   height: auto;
   margin: 0 auto;
 }
 .about img{
-  width: 96px;
-  height: 96px;
+  width: 200px;
+  height: 100%;
   margin: 0 auto;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20px 0 0 20px;
+}
+.about .texto{
+  margin: 32px 32px 32px;
 }
 .about .about-text{
   font-weight: 700;
@@ -431,5 +432,22 @@ Esta es la parte de los proyectos
 
   .header-info{
     height: calc(100vh - 61.5px);
+  }
+
+  .about{
+    flex-direction: column;
+    padding: 32px;
+    gap: 20px;
+  }
+  .about .texto{
+    margin: 0;
+    padding: 0;
+  }
+  .about img{
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
   }
 }
