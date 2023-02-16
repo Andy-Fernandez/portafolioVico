@@ -50,6 +50,7 @@ a{
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 999;
   background-color: var(--color-primario);
   display: flex;
   justify-content: space-between;
@@ -145,7 +146,7 @@ a.nav-link {
   justify-content: center;
   margin: 0 auto;
   padding: 16px;
-  height: calc(100vh);
+  height: calc(100vh - 64px);
 }
 .about{
   display: flex;
@@ -251,6 +252,7 @@ la priemra versión de código
 .main-container h2{
   font-size: 3.2rem;
   margin: 30px 10px;
+  margin-top: 64px;
 }
 /*
 Esta es la parte de los proyectos
@@ -482,7 +484,7 @@ form h2{
     top: 60px;
     width: 100vw;
     padding: 20px 0;
-    background-color: black;
+    background-color: var(--color-oscuro);
 
     height: calc(100% - 60px);
     overflow-y: auto;
