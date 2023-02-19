@@ -4,7 +4,6 @@ const navLink = document.querySelectorAll(".nav-link");
 
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("navbar-nav_visible");
-
   if (navMenu.classList.contains("navbar-nav_visible")) {
     navToggle.setAttribute("aria-label", "Cerrar menú");
   } else {

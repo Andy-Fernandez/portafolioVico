@@ -484,7 +484,6 @@ form h2{
     width: 100vw;
     padding: 20px 0;
     background-color: var(--color-oscuro);
-
     height: calc(100% + 64px);
     overflow-y: auto;
 
