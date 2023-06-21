@@ -232,7 +232,7 @@ la priemra versión de código
   object-fit: cover;
 }
 .logo{
-  margin: auto; 
+  margin: auto;
 }
 .logo img{
   width: 200px;
@@ -266,7 +266,6 @@ Esta es la parte de los proyectos
   margin-bottom: 30px;
 }
 */
-
 
 .card-section{
   display: flex;
@@ -375,7 +374,6 @@ Esta es la parte de los proyectos
   text-decoration: none;
 }*/
 
-
 /* Formulario de contacto */
 .container {
   display: flex;
@@ -448,8 +446,6 @@ form h2{
   color: var(--color-oscuro);
 }
 
-
-
 /* TOGGLE */
 .nav-toggle {
   color: white;
@@ -462,7 +458,39 @@ form h2{
   display: none;
 }
 
+/* Footer */
+footer {
+  background-color: var(--color-primario);
+  color: var(--color-claro);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
 
+.social-links i {
+  font-size: 3em; /* Ajusta este valor para cambiar el tamaño de los iconos */
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: var(--color-claro);
+}
+
+footer a:hover {
+  color: var(--color-secundario);
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
 
 /* Media query para que el navbar-var aparezca de costado en moviles: */
 @media (max-width: 768px) {
